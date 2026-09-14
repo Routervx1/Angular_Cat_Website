@@ -1,0 +1,14 @@
+<section class="page">
+  <h1>Gallery</h1>
+  <p class="subtitle">{{ count() }} good cats and counting. Tap the heart on any photo you like.</p>
+
+  <div class="grid">
+    @for (cat of cats(); track cat.id) {
+      <app-cat-card [imageUrl]="cat.imageUrl" [caption]="cat.caption" />
+    }
+  </div>
+
+  <div class="load-more">
+    <button class="btn" type="button" (click)="loadMore()">Load more cats</button>
+  </div>
+</section>
