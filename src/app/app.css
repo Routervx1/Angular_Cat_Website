@@ -1,0 +1,11 @@
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer span {
+  font-weight: 600;
+  color: var(--accent-dark);
+}
