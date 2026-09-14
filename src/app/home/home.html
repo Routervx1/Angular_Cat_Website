@@ -1,0 +1,36 @@
+<header class="hero">
+  <div class="hero-text">
+    <h1>Everything you love about cats, in one place.</h1>
+    <p>
+      Purrfect World is a small tribute to the cat: independent, curious,
+      endlessly photogenic. Browse a gallery of good cats, learn about
+      popular breeds, and pick up a fact or two along the way.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" routerLink="/gallery">See the gallery</a>
+      <a class="btn ghost" routerLink="/breeds">Explore breeds</a>
+    </div>
+  </div>
+  <img class="hero-image" src="https://cataas.com/cat?width=480&height=380" alt="A photogenic cat" />
+</header>
+
+<section class="fact-card">
+  <h2>Cat fact</h2>
+  <p class="fact-text">{{ currentFact() }}</p>
+  <button class="btn" type="button" (click)="nextFact()">Another fact</button>
+</section>
+
+<section class="highlights">
+  <article>
+    <h3>🐾 Curious by nature</h3>
+    <p>Cats investigate everything — a new box is basically an invitation.</p>
+  </article>
+  <article>
+    <h3>😴 Nap professionals</h3>
+    <p>They sleep most of the day, conserving energy for short bursts of play.</p>
+  </article>
+  <article>
+    <h3>❤️ Quiet companions</h3>
+    <p>A cat's presence — purring beside you — is its own kind of affection.</p>
+  </article>
+</section>

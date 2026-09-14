@@ -1,0 +1,90 @@
+.hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 340px;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  line-height: 1.15;
+}
+
+.hero-text p {
+  color: var(--muted);
+  max-width: 46ch;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.fact-card {
+  max-width: 1000px;
+  margin: 2.5rem auto 0;
+  padding: 1.75rem;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.fact-card h2 {
+  color: var(--accent-dark);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.fact-text {
+  font-size: 1.15rem;
+  min-height: 3.2em;
+  margin: 0.5rem auto 1.25rem;
+  max-width: 60ch;
+}
+
+.highlights {
+  max-width: 1000px;
+  margin: 2.5rem auto 0;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.highlights article {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.highlights h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.highlights p {
+  color: var(--muted);
+  margin: 0;
+}
