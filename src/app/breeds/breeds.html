@@ -1,0 +1,20 @@
+<section class="page">
+  <h1>Popular breeds</h1>
+  <p class="subtitle">A handful of well-loved cat breeds. Tap a card to read more.</p>
+
+  <div class="breed-list">
+    @for (breed of breeds; track breed.name) {
+      <article class="breed" [class.open]="expanded() === breed.name" (click)="toggle(breed.name)">
+        <div class="breed-head">
+          <h2>{{ breed.name }}</h2>
+          <span class="origin">{{ breed.origin }}</span>
+        </div>
+        <p class="temperament">{{ breed.temperament }}</p>
+
+        @if (expanded() === breed.name) {
+          <p class="description">{{ breed.description }}</p>
+        }
+      </article>
+    }
+  </div>
+</section>

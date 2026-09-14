@@ -1,0 +1,56 @@
+.subtitle {
+  color: var(--muted);
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+
+.breed-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.breed {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: box-shadow 0.15s ease;
+}
+
+.breed:hover {
+  box-shadow: 0 8px 24px rgba(43, 35, 32, 0.14);
+}
+
+.breed-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.breed-head h2 {
+  font-size: 1.2rem;
+}
+
+.origin {
+  font-size: 0.85rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.temperament {
+  margin: 0.3rem 0 0;
+  font-weight: 600;
+  color: var(--accent-dark);
+}
+
+.description {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+}
+
+.breed.open {
+  outline: 2px solid var(--accent);
+}
