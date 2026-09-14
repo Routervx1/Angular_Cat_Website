@@ -1,0 +1,16 @@
+<figure class="card">
+  <img [src]="imageUrl()" [alt]="caption()" loading="lazy" />
+  <figcaption>
+    <span>{{ caption() }}</span>
+    <button
+      class="like-btn"
+      type="button"
+      [class.liked]="liked()"
+      (click)="toggleLike()"
+      [attr.aria-pressed]="liked()"
+      aria-label="Like this cat"
+    >
+      {{ liked() ? '❤️' : '🤍' }}
+    </button>
+  </figcaption>
+</figure>
